@@ -1,0 +1,153 @@
+body{
+    background-repeat: no-repeat;
+    background-image: url(./../Images/firevulture.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    /* background-color: aqua; */
+}
+
+.contain{
+    min-width: 300px;
+    width: 1200px;
+    height: 550px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border:2px solid #000000; */
+}
+#vult{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%; 
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 2.5%;
+    width: 20%;
+    /* background-color: aqua; */
+    /* border:2px solid #000000; */
+}
+#vulture{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    width: 99%;
+    height: 20%;
+    float: left;
+    /* background-color: aquamarine; */
+    /* border:2px solid #000000; */
+}
+.vulture_win{
+    margin-bottom: 2%;
+    font-size: 120%;
+    width: 99%;
+    height: 75%;
+    visibility: hidden;
+    /* background-color: aquamarine; */
+    /* border:2px solid #000000; */
+}
+.empty{
+    width: 99%;
+    height: 20%;
+}
+h1, h2{
+    color: #f38f76;
+    word-wrap: break-word;
+}
+
+#game{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: aquamarine;
+    border:2px solid blue;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 10px 15px 20px 0px #000000;
+    background: radial-gradient(circle at 30% 30%, aquamarine, blue);
+}
+
+#crow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5%; 
+    width: 20%;
+    /* background-color: blue; */
+    /* border:2px solid #000000; */
+    /* float: left;  */
+}
+#crow span {
+    width: 99%;
+    position: relative;
+    visibility: hidden;
+    z-index: 1000000000;
+    /* background-color: aquamarine; */
+}
+#livecrow{
+    margin-bottom: 2%;
+    width: 99%;
+    height: 49%;
+    float: left;
+    /* background-color: aquamarine; */
+    /* border:2px solid #000000; */
+}
+#deadcrow{
+    width: 99%;
+    height: 49%;
+    float: left;
+    /* background-color: aquamarine; */
+    /* border:2px solid #000000; */
+}
+
+.circle {
+    /* background: #FF7A59; */
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-top: 4%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: fixed;
+    background: 
+    radial-gradient(
+      circle at 30% 30%,
+      #FF7A59,
+      #472902
+    );
+    animation: turn 3s ease-out 0s infinite;
+    box-shadow: 10px 15px 20px 0px #000000;
+}
+.circle:hover{
+    background: 
+    radial-gradient(
+      circle at 30% 30%,
+      #472902,
+      #FF7A59
+    );
+}
+@keyframes turn {
+    0%, 100% {
+      background-position: 20% 70%;
+    }
+    50% {
+      background-position: 80% 70%;
+    }
+  }
+
+.lines{
+    color: "black";
+    stroke: 50;
+    z-index: 100;
+}
+.gamediv{
+    display: flex;
+    flex-direction: row;
+}
+
+

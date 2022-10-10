@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../CSS/style2.css">
+    <title>KAOOA Board Game</title>
+    <link rel="icon" href="./../Images/vulture.webp" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./../JS/jquery.min.js"></script>
+    <script type="text/javascript" src="./../JS/jquery.line.js"></script>
+</head>
+
+<body>
+    <div class="contain" style="margin-bottom: 2%;" data-tilt data-tilt-glare data-tilt-max-glare="1">
+        <div id="vult">
+            <div id="vulture" ondragover="dragOver(event)">
+                <div class="circle" id="101" ondragstart="dragStart(event)" draggable="true"
+                style="background-color: black; z-index: 10000;
+                background: radial-gradient(circle at 30% 30%, #000000, #333333);"></div>
+            </div>
+            <div class="vulture_win" id="5000">
+                <p>
+                    <h1 style="margin-top: 30%;"><center> Yipee!!</center></h1>
+                    <h1><center>Vulture Won</center></h1>
+                    <h2 class="emoji""><center>&#128525;&#128525;&#128525;</center></h2>
+                </p>
+            </div>
+            <div class="empty"></div>
+        </div>
+
+        <div id="game" >
+                <div id="line1" class="lines"></div>
+                <div id="line2" class="lines"></div>
+                <div id="line3" class="lines"></div>
+                <div id="line4" class="lines"></div>
+                <div id="line5" class="lines"></div>
+                <div id="line6" class="lines"></div>
+                <div id="line7" class="lines"></div>
+                <div id="line8" class="lines"></div>
+                <div id="line9" class="lines"></div>
+                <div id="line10" class="lines"></div>
+                <div id="line11" class="lines"></div>
+                <div id="line12" class="lines"></div>
+                <div id="line13" class="lines"></div>
+                <div id="line14" class="lines"></div>
+                <div id="line15" class="lines"></div>
+
+
+                <div class="gamediv" id="grow1" >
+                    <div class="circle" id="1" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 30px; left: 580px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                    <div id="line1" class="lines"></div></div>
+                <div class="gamediv" id="grow2">
+                    <div class="circle" id="2" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 120px; left: 400px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                    <div class="circle" id="3" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 120px; left: 550px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                    <div class="circle" id="4" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 120px; left: 620px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                    <div class="circle" id="5" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 120px; left: 750px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                </div>
+                <div class="gamediv" id="grow3">
+                    <div class="circle" id="6" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 213px; left: 508px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                    <div class="circle" id="7" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 213px; left: 650px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                </div>
+                <div class="gamediv" id="grow4">
+                    <div class="circle" id="8" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 280px; left: 580px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                </div>
+                <div class="gamediv" id="grow5" >
+                    <div class="circle" id="9" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 400px; left: 440px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                    <div class="circle" id="10" ondragover="dragOver(event)" ondrop="dropHandler(event)"
+                    style = "position: absolute; top: 400px; left: 720px; z-index: 105; transform: scale(1.1);
+                    background: radial-gradient(circle at 30% 30%, #ffffff, #777777);"></div>
+                </div>
+        </div>
+
+            <div id="crow">
+                <div id="livecrow" ondragover="dragOver(event)" style=" background-size: 15% 18%; background-color: 0000;">
+                    <div class="circle" id="1001" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                    <div class="circle" id="1002" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                    <div class="circle" id="1003" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                    <div class="circle" id="1004" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                    <div class="circle" id="1005" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                    <div class="circle" id="1006" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                    <div class="circle" id="1007" ondragstart="dragStart(event)" draggable="true" style="z-index: 100010;" data-tilt data-tilt-glare data-tilt-max-glare="1"></div>
+                <span class="vulture_win" id="4000">
+                    <p>
+                        <h1 style="margin-top: 60%;"><center> Yipee!!</center></h1>
+                        <h1><center>Crow Won</center></h1>
+                        <h2 class="emoji""><center>&#128525;&#128525;&#128525;</center></h2>
+                    </p>
+                </span>
+                </div>
+                <div id="deadcrow">
+                    <div class="circle" id="10001" style="visibility: hidden;
+                    background: radial-gradient(circle at 30% 30%, #ff0000, #dd5555);"></div>
+                    <div class="circle" id="10002" style="visibility: hidden;
+                    background: radial-gradient(circle at 30% 30%, #ff0000, #dd5555);"></div>
+                    <div class="circle" id="10003" style="visibility: hidden;
+                    background: radial-gradient(circle at 30% 30%, #ff0000, #dd5555);"></div>
+                    <div class="circle" id="10004" style="visibility: hidden;
+                    background: radial-gradient(circle at 30% 30%, #ff0000, #dd5555);"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+<center>
+	<h2 style="margin-top: 0px;" > Click here to Download Logs: 
+     <a href="" id="link" download="logs.txt" >Download </a>
+    </h2>
+</center> 
+
+</body>
+<script type="text/javascript" src="./../JS/javascript.js"></script>
+<script type="text/javascript" src="./../JS/tilt.jQuery.min.js"></script>
+
+
+
+
+</html>

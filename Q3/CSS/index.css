@@ -1,0 +1,13 @@
+
+.abcd{
+    display: flex;
+    flex-direction: row;
+}
+
+.heading{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    min-height: 10%;
+    border-bottom: 0px;
+}
